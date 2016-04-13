@@ -46,8 +46,12 @@ for(var x in trips){
 return total;
 };
 exports.lowestTrips = function(capeTownTaxis){
+var trips = [];
   for(var trip in capeTownTaxis){
     var amountTrip = capeTownTaxis[trip].Trips;
-    console.log(amountTrip);
+    trips.push(amountTrip);
   }
+  var lowestTrips = trips[0];
+  console.log(lowestTrips);
+  return lowestTrips;
 };

@@ -108,6 +108,6 @@ describe("lowestTrips",function(){
     "Fare": 13,
     "Trips": 10
   }]);
-    assert.equal(result,"");
+    assert.equal(result,9);
   });
 });
